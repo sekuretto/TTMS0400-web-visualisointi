@@ -1,0 +1,6 @@
+http://k8691.pages.labranet.jamk.fi/ttms0400-web-visualisointi/WV-H5-Web-typografia/web-typography/web-fonts.html
+
+http://k8691.pages.labranet.jamk.fi/ttms0400-web-visualisointi/WV-H5-Web-typografia/webtypography_l%C3%A4hdekoodi.txt
+
+Koska internetingishard-sivut olivat nurin, on nämä tehtävät tehty käyttämällä Internet Archiven kopiota sivuista (päivätty heinäkuulle 2019): 
+https://web.archive.org/web/20190712210228/https://internetingishard.com/html-and-css/web-typography/

@@ -1,0 +1,6 @@
+http://k8691.pages.labranet.jamk.fi/ttms0400-web-visualisointi/WV-H6-Web-lomakkeet/speaker-submission.html
+
+http://k8691.pages.labranet.jamk.fi/ttms0400-web-visualisointi/WV-H6-Web-lomakkeet/speaker-submission_lähdekoodi.txt
+
+Koska internetingishard-sivut olivat nurin, on nämä tehtävät tehty käyttämällä Internet Archiven kopiota sivuista (päivätty heinäkuulle 2019): 
+https://web.archive.org/web/20190712210227/https://internetingishard.com/html-and-css/forms/

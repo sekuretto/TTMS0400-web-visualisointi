@@ -1,12 +1,14 @@
-# TTMS0400-web-visualisointi-harkat
+# TTMS0400-web-visualisointi
 
-Web-visualisointi -kurssin viikkoharjoitukset sekä loppuharkka
-
-Oma nimi: Marja Jämbeck
-Opiskelijatunnus: K8691
-Slack: marja_k8691
+Web-visualisointi -kurssin harjoitukset ja harkkatyö  
+Kurssimateriaalit: http://ttms0400.pages.labranet.jamk.fi/TTMS0400-web-visualisointi/  
 
 
-Linkit:
-https://docs.gitlab.com/ee/gitlab-basics/start-using-git.html
-https://about.gitlab.com/features/pages/
+Oma nimi: Marja Jämbeck  
+Opiskelijatunnus: K8691  
+Slack: marja_k8691  
+
+
+Linkit:  
+https://docs.gitlab.com/ee/gitlab-basics/start-using-git.html  
+https://about.gitlab.com/features/pages/  
