@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS-animointi: Nappula ja Transition</title>
+</head>
+<body>
+    <h2>Nappula ja Transition</h2>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 376 376">
+        <defs>
+            <style>
+                .a {fill:#aa3030;}
+                .b {fill:#661414;}
+                .c {
+                    fill:#bc3131;
+                    transition: fill-opacity 300ms ease-in;
+                }
+                .d {fill:#ffcfcf;}
+                .c:hover {
+                    fill-opacity: 0.2;
+                }
+                .a:active, .b:active, .c:active {
+                    fill: purple;
+                }
+            </style>
+        </defs>
+        <title>button</title>
+        <circle class="a" cx="188" cy="188" r="188"/>
+        <circle class="b" cx="188" cy="188" r="163"/>
+        <circle class="c" cx="188" cy="188" r="150"/>
+        <ellipse class="d" cx="888.23" cy="455.5" rx="16.86" ry="42.18" transform="translate(-683.63 373.13) rotate(-42.23)"/>
+    </svg>
+</body>
+</html>

@@ -1,0 +1,129 @@
+@use 'styles/fonts'
+@forward 'styles/colors'
+@use 'styles/colors'
+
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+
+body 
+  font-family: 'Roboto', sans-serif   /* Add 'Roboto' here */
+  font-weight: 300
+  font-size: 18px
+  line-height: 1.8em
+  color: $base-text
+
+em 
+  font-style: italic
+
+strong 
+  font-weight: bold  /* Or 700 */
+
+h1, h2, h3, h4, h5, h6 
+  line-height: 1.3em
+  font-weight: normal
+  font-style: normal
+
+header
+  text-align: center
+  color: $header-text
+  nav
+    background-color: $nav-back
+    ul
+      display: flex
+      justify-content: space-between
+      flex-wrap: wrap
+      width: 100%
+      max-width: 900px
+      margin: 0 auto 
+      li
+        list-style-type: none
+        width: 50%
+        padding-top: .5em
+        padding-bottom: .5em
+        border-top: 1px solid $nav-items
+        &:nth-of-type(1), &:nth-of-type(2)
+          border-top: none
+        &:nth-of-type(2n)
+          border-left: 1px solid $nav-items
+        .selected
+          color: $nav-text
+      a
+        &:link, &:visited
+          color: $nav-items
+          text-decoration: none
+        &:hover, &:visited:hover, &:active, &:visited:active
+          color: $nav-text
+          text-decoration: underline
+
+.hero
+  padding-top: 9em
+  padding-bottom: 9em
+  background-color: $base-color
+  h1
+    font-size: 50px
+
+.section
+  padding: 4em 1em
+  margin: 0 auto
+  max-width: 540px
+  h2
+    font-size: 30px
+    margin-bottom: .7em
+  &:first-of-type
+    border-top: none
+  p, ul, ol, figure
+    margin-bottom: 1em
+    &:last-child
+      margin-bottom: 0
+
+.section--gray
+  border-top: 1px solid #D6D9DC
+.section--blue
+  border-top: 1px solid #B2D6FF
+  h2
+    color: #5995DA
+.section--red
+  border-top: 1px solid #F09A9D
+  h2
+    color: #D55C5F
+
+.button
+  &:link, &:visited
+    display: block
+    text-decoration: none
+    color: #FFF
+    background-color: #4A90E2
+    font-weight: bold
+    padding: 10px
+    border-radius: 5px
+    text-align: center
+    margin: 1.8em auto
+  &:hover, &:visited:hover
+    color: #FFF
+    background-color: #6AA9F4
+  &:active, &:visited:active
+    color: #FFF
+    background-color: #3F7CC4
+
+@media only screen and (min-width: 580px)
+  .section
+    margin: 4em auto
+    padding: 2.5em 3em
+  .section--gray:first-of-type, .section--gray
+    border: 1px solid #D6D9DC
+  .section--blue:first-of-type, .section--blue
+    border: 1px solid #B2D6FF
+  .section--red:first-of-type, .section--red
+    border: 1px solid #F09A9D
+
+@media only screen and (min-width: 750px)
+  nav
+    padding-left: 2em
+    padding-right: 2em
+    li
+      width: auto
+      border-top: none
+      &:nth-of-type(2n)
+        border-left: none
