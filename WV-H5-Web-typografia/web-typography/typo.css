@@ -26,11 +26,11 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;   /* Add 'Roboto' here */
-  font-weight: 300;
+  font-family: 'Roboto', sans-serif;
   font-size: 18px;
   line-height: 1.8em;
   color: #5D6063;
+  font-weight: 300;
 }
 
 em {
@@ -38,14 +38,27 @@ em {
 }
 
 strong {
-  font-weight: bold;  /* Or 700 */
+  font-weight: bold;
+  /* Or 700 */
 }
 
-h1, h2, h3, h4, h5, h6 {
+/* This will only work in Firefox */
+em,
+strong {
+  font-synthesis: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   line-height: 1.3em;
   font-weight: normal;
   font-style: normal;
 }
+
 
 header {
   text-align: center;
@@ -198,14 +211,17 @@ nav a:visited:active {
     margin: 4em auto;
     padding: 2.5em 3em;
   }
+
   .section--gray:first-of-type,
   .section--gray {
     border: 1px solid #D6D9DC;
   }
+
   .section--blue:first-of-type,
   .section--blue {
     border: 1px solid #B2D6FF;
   }
+
   .section--red:first-of-type,
   .section--red {
     border: 1px solid #F09A9D;
@@ -218,6 +234,7 @@ nav a:visited:active {
     padding-left: 2em;
     padding-right: 2em;
   }
+
   nav li {
     width: auto;
     border-top: none;

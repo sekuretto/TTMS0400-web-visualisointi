@@ -1,28 +1,30 @@
 <!-- web-fonts.html -->
 <!DOCTYPE html>
 <html lang='en'>
+
 <head>
-  <meta charset='UTF-8'/>
+  <meta charset='UTF-8' />
   <title>Web Typography</title>
-  <link rel='stylesheet' href='typo.css'/>
+  <link rel='stylesheet' href='typo.css' />
   <style>
     .system-fonts {
       font-family: sans-serif;
     }
   </style>
 </head>
+
 <body>
 
   <header>
     <nav>
-    <ul>
-      <li class='selected'>Web Fonts</li>
-      <li><a href='history.html'>History</a></li>
-      <li><a href='indents.html'>Indents</a></li>
-      <li><a href='alignment.html'>Alignment</a></li>
-      <li><a href='spacing.html'>Spacing</a></li>
-      <li><a href='line-length.html'>Line Length</a></li>
-    </ul>
+      <ul>
+        <li class='selected'>Web Fonts</li>
+        <li><a href='history.html'>History</a></li>
+        <li><a href='indents.html'>Indents</a></li>
+        <li><a href='alignment.html'>Alignment</a></li>
+        <li><a href='spacing.html'>Spacing</a></li>
+        <li><a href='line-length.html'>Line Length</a></li>
+      </ul>
     </nav>
     <div class='hero'>
       <h1>Web Typography</h1>
@@ -33,22 +35,22 @@
 
     <section class='section section--gray'>
       <h2>Web Fonts</h2>
-    
-      <p>This paragraph is using a web font call <em>Roboto Light</em>. It’s a
-      little more refined and lends some <strong>unique character</strong> to
-      the web page.</p>
+
+      <p>This paragraph is using a web font call <em>Roboto Light</em>. It’s a little
+        more refined and lends some <strong>unique character</strong> to the web page.</p>
     </section>
 
     <section class='section section--gray system-fonts'>
       <h2>System Fonts</h2>
 
       <p>This paragraph is using a built-in sans-serif font, which is probably
-      Arial or Helvetica. It’s not exactly ugly, but it’s definitely familiar.</p>
+        Arial or Helvetica. It’s not exactly ugly, but it’s definitely familiar.</p>
     </section>
 
   </div>
 
 </body>
+
 </html>
 
 
@@ -81,11 +83,11 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;   /* Add 'Roboto' here */
-  font-weight: 300;
+  font-family: 'Roboto', sans-serif;
   font-size: 18px;
   line-height: 1.8em;
   color: #5D6063;
+  font-weight: 300;
 }
 
 em {
@@ -93,10 +95,22 @@ em {
 }
 
 strong {
-  font-weight: bold;  /* Or 700 */
+  font-weight: bold;
+  /* Or 700 */
 }
 
-h1, h2, h3, h4, h5, h6 {
+/* This will only work in Firefox */
+em,
+strong {
+  font-synthesis: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   line-height: 1.3em;
   font-weight: normal;
   font-style: normal;
@@ -254,14 +268,17 @@ nav a:visited:active {
     margin: 4em auto;
     padding: 2.5em 3em;
   }
+
   .section--gray:first-of-type,
   .section--gray {
     border: 1px solid #D6D9DC;
   }
+
   .section--blue:first-of-type,
   .section--blue {
     border: 1px solid #B2D6FF;
   }
+
   .section--red:first-of-type,
   .section--red {
     border: 1px solid #F09A9D;
@@ -274,6 +291,7 @@ nav a:visited:active {
     padding-left: 2em;
     padding-right: 2em;
   }
+
   nav li {
     width: auto;
     border-top: none;
@@ -285,27 +303,37 @@ nav a:visited:active {
 }
 
 
+
 <!-- alignment.html -->
 <!DOCTYPE html>
 <html lang='en'>
+
 <head>
-  <meta charset='UTF-8'/>
+  <meta charset='UTF-8' />
   <title>Text Alignment</title>
-  <link rel='stylesheet' href='typo.css'/>
+  <link rel='stylesheet' href='typo.css' />
   <style>
     .left {
       text-align: left;
     }
+
     .center {
       text-align: center;
     }
+
     figcaption {
       display: none;
     }
+
+    .justify {
+      text-align: justify;
+    }
+
     @media only screen and (min-width: 900px) {
       figure {
         position: relative;
       }
+
       figcaption {
         display: block;
 
@@ -318,127 +346,141 @@ nav a:visited:active {
         width: 200px;
       }
     }
-    .justify {
-      text-align: justify;
-    }
   </style>
 </head>
+
 <body>
 
-<header>
-  <nav>
-    <ul>
-      <li><a href='web-fonts.html'>Web Fonts</a></li>
-      <li><a href='history.html'>History</a></li>
-      <li><a href='indents.html'>Indents</a></li>
-      <li class='selected'>Alignment</li>
-      <li><a href='spacing.html'>Spacing</a></li>
-      <li><a href='line-length.html'>Line Length</a></li>
-    </ul>
-  </nav>
-  <div class='hero'>
-    <h1>Text Alignment</h1>
+  <header>
+    <nav>
+      <ul>
+        <li><a href='web-fonts.html'>Web Fonts</a></li>
+        <li><a href='history.html'>History</a></li>
+        <li><a href='indents.html'>Indents</a></li>
+        <li class='selected'>Alignment</li>
+        <li><a href='spacing.html'>Spacing</a></li>
+        <li><a href='line-length.html'>Line Length</a></li>
+      </ul>
+    </nav>
+    <div class='hero'>
+      <h1>Text Alignment</h1>
+    </div>
+  </header>
+
+  <div class='page'>
+
+    <section class='section section--gray left'>
+      <h2>Left Alignment</h2>
+
+      <p>Left-aligned text is the standard because it gives the reader a vertical
+        anchor to jump back to on every line. You should use it for most of your body
+        text (unless you have a very good reason not to).</p>
+
+    </section>
+
+    <section class='section section--gray center'>
+      <h2>Center Alignment</h2>
+
+      <p>Center-aligned text doesn’t have that anchor, so it’s easier for the eye
+        to get lost when it tries to jump to the next line. Reserve it for special
+        kinds of content, like poems, lyrics, and headings.</p>
+
+    </section>
+
+    <section class='section section--gray'>
+      <h2>Right Alignment</h2>
+
+      <p>Only use right-aligned text when it makes sense for the layout. For
+        example, a caption for an image:</p>
+
+      <figure>
+        <figcaption>These letters are touching. This is called a
+          ligature.</figcaption>
+        <img src='ligature.svg' />
+      </figure>
+
+      <p>Of course, if you’re publishing content in a language that’s read
+        right-to-left, that’s another story...</p>
+
+    </section>
+
+    <section class='section section--gray justify'>
+
+      <h2>Justified Alignment</h2>
+
+      <p>Justified text requires a good hyphenation engine. Without an intelligent
+        way to split long words across lines, you get big spaces between words, which
+        makes it harder to scan the text. Most browsers don’t have good built-in
+        hyphenation engines.</p>
+
+    </section>
+
   </div>
-</header>
-
-<div class='page'>
-
-  <section class='section section--gray left'>
-    <h2>Left Alignment</h2>
-
-    <p>Left-aligned text is the standard because it gives the reader a vertical
-    anchor to jump back to on every line. You should use it for most of your body
-    text (unless you have a very good reason not to).</p>
-
-  </section>
-
-  <section class='section section--gray center'>
-    <h2>Center Alignment</h2>
-
-    <p>Center-aligned text doesn’t have that anchor, so it’s easier for the eye
-    to get lost when it tries to jump to the next line. Reserve it for special
-    kinds of content, like poems, lyrics, and headings.</p>
-
-  </section>
-
-  <section class='section section--gray'>
-    <h2>Right Alignment</h2>
-
-    <p>Only use right-aligned text when it makes sense for the layout. For
-    example, a caption for an image:</p>
-
-    <figure>
-      <figcaption>These letters are touching. This is called a
-      ligature.</figcaption>
-      <img src='ligature.svg'/>
-    </figure>
-
-    <p>Of course, if you’re publishing content in a language that’s read
-    right-to-left, that’s another story...</p>
-
-  </section>
-
-  <section class='section section--gray justify'>
-
-    <h2>Justified Alignment</h2>
-
-    <p>Justified text requires a good hyphenation engine. Without an intelligent
-    way to split long words across lines, you get big spaces between words, which
-    makes it harder to scan the text. Most browsers don’t have good built-in
-    hyphenation engines.</p>
-    
-  </section>
-
-</div>
 
 </body>
+
 </html>
 
 
 <!-- history.html -->
 <!DOCTYPE html>
 <html lang='en'>
+
 <head>
-  <meta charset='UTF-8'/>
+  <meta charset='UTF-8' />
   <title>History of Typography</title>
-  <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Droid+Sans+Mono|Lato|Libre+Baskerville|Lobster|Questrial|Rokkitt|Rufina|Sorts+Mill+Goudy|UnifrakturMaguntia" rel="stylesheet">
-  <link rel='stylesheet' href='typo.css'/>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Droid+Sans+Mono|Lato|Libre+Baskerville|Lobster|Questrial|Rokkitt|Rufina|Sorts+Mill+Goudy|UnifrakturMaguntia"
+    rel="stylesheet">
+  <link rel='stylesheet' href='typo.css' />
   <style>
     .blackletter {
       font-family: 'UnifrakturMaguntia', cursive;
     }
+
     .old-style {
       font-family: 'Sorts Mill Goudy', serif;
     }
+
     .transitional {
       font-family: 'Libre Baskerville', serif;
     }
+
     .didot {
       font-family: 'Rufina', serif;
     }
+
     .slab {
       font-family: 'Rokkitt', serif;
     }
+
     .fat-face {
       font-family: 'Alfa Slab One', cursive;
     }
+
     .grotesque {
       font-family: 'Roboto', sans-serif;
     }
+
     .geometric {
       font-family: 'Questrial', sans-serif;
     }
+
     .humanist {
       font-family: 'Lato', sans-serif;
     }
+
     .display {
       font-family: 'Lobster', cursive;
     }
+
     .monospace {
       font-family: 'Droid Sans Mono', monospace;
     }
   </style>
 </head>
+
 <body>
 
   <header>
@@ -463,9 +505,9 @@ nav a:visited:active {
       <h2>Gothic/Blackletter</h2>
 
       <p>When Gutenburg invented the printing press in 1440, he wanted to
-      mass-produce the hand-drawn caligraphy of monks. It’s hard to read if
-      you’re not a medieval scholar, so don’t use it unless you’re really trying
-      to recreate the middle ages.</p>
+        mass-produce the hand-drawn caligraphy of monks. It’s hard to read if
+        you’re not a medieval scholar, so don’t use it unless you’re really trying
+        to recreate the middle ages.</p>
 
     </section>
 
@@ -473,17 +515,17 @@ nav a:visited:active {
       <h2>Old Style Serif</h2>
 
       <p>Old style fonts were the first “modern” fonts. They’re soft, warm, and
-      still almost feel hand-drawn. They’re built for legibility, which make them
-      fantastic text fonts. Use them when you want to evoke the Renaissance.</p>
+        still almost feel hand-drawn. They’re built for legibility, which make them
+        fantastic text fonts. Use them when you want to evoke the Renaissance.</p>
     </section>
 
     <section class='section section--gray transitional'>
       <h2>Transitional Serif</h2>
 
       <p>Make old-style fonts less hand-drawn and chop the serifs off at right
-      angles, and you get transitional fonts. This was the predominant font
-      during the founding of the United States and has strong connotations with
-      neoclassical architecture and art.</p>
+        angles, and you get transitional fonts. This was the predominant font
+        during the founding of the United States and has strong connotations with
+        neoclassical architecture and art.</p>
     </section>
 
 
@@ -491,9 +533,9 @@ nav a:visited:active {
       <h2>Didot Serif</h2>
 
       <p>Didot fonts create a stark contrast between thick vertical strokes and
-      very thin horizontal ones. They have an air of elegance about them, which
-      is why they’re popular fonts for luxury brands and fasion magazines. Not so
-      great as text fonts though.</p>
+        very thin horizontal ones. They have an air of elegance about them, which
+        is why they’re popular fonts for luxury brands and fasion magazines. Not so
+        great as text fonts though.</p>
     </section>
 
 
@@ -501,8 +543,8 @@ nav a:visited:active {
       <h2>Slab Serif</h2>
 
       <p>Take a Didot font, make all the strokes the same width, and you get a
-      slab serif. They’re a font created during the industrial revolution,
-      primarly for titles, not for long runs of text.</p>
+        slab serif. They’re a font created during the industrial revolution,
+        primarly for titles, not for long runs of text.</p>
     </section>
 
 
@@ -510,9 +552,9 @@ nav a:visited:active {
       <h2>Fat Face Serif</h2>
 
       <p>The industrial revolution brought about a need to advertise the
-      resulting surplus of goods. Making slab serifs fonts really thick was a
-      good way to stand out. You’ll also recognize fat face serifs in want-ads
-      from the Westward Expansion in the United States.</p>
+        resulting surplus of goods. Making slab serifs fonts really thick was a
+        good way to stand out. You’ll also recognize fat face serifs in want-ads
+        from the Westward Expansion in the United States.</p>
 
     </section>
 
@@ -520,8 +562,8 @@ nav a:visited:active {
       <h2>Grotesque Sans Serif</h2>
 
       <p>Slab serif fonts without the serifs don’t have much character, but that
-      makes them really versatile, right? Max Miedinger certainly thought so when
-      he invented Helvetica in 1957.</p>
+        makes them really versatile, right? Max Miedinger certainly thought so when
+        he invented Helvetica in 1957.</p>
 
     </section>
 
@@ -529,9 +571,9 @@ nav a:visited:active {
       <h2>Geometric Sans Serif</h2>
 
       <p>Apply Bauhaus design aesthetics to typography, and you get geometric
-      sans serif fonts. They’re like Grotesque fonts, but have rounder forms.
-      They’re a classically modern font for the 1940s and 50s, but they’re hard
-      to read, making them less suitable as text fonts.</p>
+        sans serif fonts. They’re like Grotesque fonts, but have rounder forms.
+        They’re a classically modern font for the 1940s and 50s, but they’re hard
+        to read, making them less suitable as text fonts.</p>
 
     </section>
 
@@ -539,9 +581,9 @@ nav a:visited:active {
       <h2>Humanist Sans Serif</h2>
 
       <p>Geometric sans serif fonts lost their human character, so why not add a
-      little hint of old-style serif into a sans serif font? You get a modern
-      font that’s easy-to-read and has enough character to stand on its own as a
-      display font.</p>
+        little hint of old-style serif into a sans serif font? You get a modern
+        font that’s easy-to-read and has enough character to stand on its own as a
+        display font.</p>
 
     </section>
 
@@ -549,9 +591,9 @@ nav a:visited:active {
       <h2>Display</h2>
 
       <p>Now that we have web fonts, the sky’s the limit with how fancy we can
-      get with our fonts. The last decade has seen an explosion in fancy font
-      faces, many of which are best-suited for titles. These are great for adding
-      unique character to a website’s headings.</p>
+        get with our fonts. The last decade has seen an explosion in fancy font
+        faces, many of which are best-suited for titles. These are great for adding
+        unique character to a website’s headings.</p>
 
     </section>
 
@@ -559,33 +601,37 @@ nav a:visited:active {
       <h2>Monospace</h2>
 
       <p>Monospace fonts are a fluke of history. They were designed specifically
-      for the technical limitations of typewriters, ignoring many of the
-      typographic principles that make for legible text. Don’t use them unless
-      you’re marking up code snippets.</p>
+        for the technical limitations of typewriters, ignoring many of the
+        typographic principles that make for legible text. Don’t use them unless
+        you’re marking up code snippets.</p>
 
     </section>
 
   </div>
 
 </body>
+
 </html>
 
 
 <!-- indents.html -->
 <!DOCTYPE html>
 <html lang='en'>
+
 <head>
-  <meta charset='UTF-8'/>
+  <meta charset='UTF-8' />
   <title>Paragraph Indents</title>
-  <link rel='stylesheet' href='typo.css'/>
+  <link rel='stylesheet' href='typo.css' />
   <style>
     .paragraph-indent p {
       text-indent: 1em;
       margin-bottom: 0;
     }
+
     .paragraph-indent p:first-of-type {
       text-indent: 0;
     }
+
     /* DESIGNERS WILL JUDGE YOU FOR THIS */
     .never-both p {
       text-indent: 1em;
@@ -593,6 +639,7 @@ nav a:visited:active {
     }
   </style>
 </head>
+
 <body>
 
   <header>
@@ -617,11 +664,11 @@ nav a:visited:active {
       <h2>Indents</h2>
 
       <p>Everything in typography is about being subtle, and styling the separation
-      between paragraphs is no different.</p>
+        between paragraphs is no different.</p>
 
-	  <p>Denoting a new paragraph should hardly be noticable to the reader, and
-	  first-line indents are a good way to achieve that. The first paragraph
-	  doesn’t need to be indented.</p>
+      <p>Denoting a new paragraph should hardly be noticable to the reader, and
+        first-line indents are a good way to achieve that. The first paragraph
+        doesn’t need to be indented.</p>
 
     </section>
 
@@ -629,17 +676,17 @@ nav a:visited:active {
       <h2>Or Margins</h2>
 
       <p>Spacing is the other way to set off a new paragraph. You can do this with
-      the <code>bottom-margin</code> CSS property.</p>
+        the <code>bottom-margin</code> CSS property.</p>
 
       <p>We find that using a bottom margin makes it a little easier to scan a web
-      page, while indents give more of a narrative or newspaper-y feel.</p>
+        page, while indents give more of a narrative or newspaper-y feel.</p>
     </section>
 
     <section class='section section--red never-both'>
       <h2>But Never Both</h2>
 
       <p>The purpose of a first-line indent or bottom margin is to indicate to the
-      reader that, well, you’re starting a new paragraph.</p>
+        reader that, well, you’re starting a new paragraph.</p>
 
       <p>Readers aren’t stupid, and they don’t need two signs that a new paragraph is happening. That’s redundant.</p>
 
@@ -648,16 +695,18 @@ nav a:visited:active {
   </div>
 
 </body>
+
 </html>
 
 
 <!-- line-length.html -->
 <!DOCTYPE html>
 <html lang='en'>
+
 <head>
-  <meta charset='UTF-8'/>
+  <meta charset='UTF-8' />
   <title>Line Length</title>
-  <link rel='stylesheet' href='typo.css'/>
+  <link rel='stylesheet' href='typo.css' />
   <style>
     @media only screen and (min-width: 580px) {
       .not-so-manageable {
@@ -668,6 +717,7 @@ nav a:visited:active {
     }
   </style>
 </head>
+
 <body>
 
   <header>
@@ -692,13 +742,13 @@ nav a:visited:active {
       <h2>Manageable Line Length</h2>
 
       <p>You should try to limit the length of your lines to approximately 80
-      characters or less. It reduces strain on the reader’s eyes, since they don’t
-      need to move back and forth as much. It also helps prevent them from jumping
-      to the wrong line when they get to the end of the previous line. The end
-      result is that it’s easier for visitors to digest your content.</p>
+        characters or less. It reduces strain on the reader’s eyes, since they don’t
+        need to move back and forth as much. It also helps prevent them from jumping
+        to the wrong line when they get to the end of the previous line. The end
+        result is that it’s easier for visitors to digest your content.</p>
 
       <p>Don’t believe us? Try reading Wikipedia with a narrow browser window. It
-      makes a big difference.</p>
+        makes a big difference.</p>
 
     </section>
 
@@ -706,52 +756,59 @@ nav a:visited:active {
       <h2>Not-So-Manageable Line Length</h2>
 
       <p>This section contains the same text as the previous one, but with a line
-      length that always stretches to the size of the browser. It’s more difficult
-      to read when your browser window is wide.</p>
+        length that always stretches to the size of the browser. It’s more difficult
+        to read when your browser window is wide.</p>
 
       <p>You should try to limit the length of your lines to approximately 80
-      characters or less. It reduces strain on the reader’s eyes, since they don’t
-      need to move back and forth as much. It also helps prevent them from jumping
-      to the wrong line when they get to the end of the previous line. The end
-      result is that it’s easier for visitors to digest your content.</p>
+        characters or less. It reduces strain on the reader’s eyes, since they don’t
+        need to move back and forth as much. It also helps prevent them from jumping
+        to the wrong line when they get to the end of the previous line. The end
+        result is that it’s easier for visitors to digest your content.</p>
 
       <p>Don’t believe us? Try reading Wikipedia with a narrow browser window. It
-      makes a big difference.</p>
+        makes a big difference.</p>
 
     </section>
 
   </div>
 
 </body>
+
 </html>
 
 
 <!-- spacing.html -->
 <!DOCTYPE html>
 <html lang='en'>
+
 <head>
-  <meta charset='UTF-8'/>
+  <meta charset='UTF-8' />
   <title>Spacing</title>
-  <link rel='stylesheet' href='typo.css'/>
+  <link rel='stylesheet' href='typo.css' />
   <style>
     .messy {
       line-height: 1.2em;
     }
+
     .messy h2 {
       line-height: .9em;
     }
+
     .messy:last-of-type {
       line-height: 1.5em;
     }
+
     .messy:last-of-type h2 {
       margin-bottom: .3em;
     }
+
     .messy .button:link,
     .messy .button:visited {
       margin-top: 0;
     }
   </style>
 </head>
+
 <body>
 
   <header>
@@ -776,25 +833,25 @@ nav a:visited:active {
       <h2>Give Your Elements Enough Room to Breath</h2>
 
       <p>One of the easiest ways to make your web pages look more professional is
-      to add bigger margins or padding between everything.</p>
+        to add bigger margins or padding between everything.</p>
 
       <p>By everything, we mean the space between headings, paragraphs, images,
-      form controls, the vertical space between lines, the horizontal space between
-      the edge of the page, and pretty much every other margin or padding you can
-      think of.</p>
+        form controls, the vertical space between lines, the horizontal space between
+        the edge of the page, and pretty much every other margin or padding you can
+        think of.</p>
     </section>
 
     <section class='section section--blue'>
       <h2>Consistent Spacing</h2>
 
       <p>Using a <em>consistent</em> margin between headings, paragraphs, images,
-      and other elements gives a vertical rhythm to the page. See how this button
-      doesn’t seem to break the flow of the page?</p>
+        and other elements gives a vertical rhythm to the page. See how this button
+        doesn’t seem to break the flow of the page?</p>
 
       <a class='button' href='#'>Learn More About Typography</a>
 
       <p>Consistent spacing makes your web page feel more like a cohesive whole,
-      rather than a bunch of unrelated graphical elements.</p>
+        rather than a bunch of unrelated graphical elements.</p>
 
     </section>
 
@@ -802,25 +859,25 @@ nav a:visited:active {
       <h2>Without Enough Space, Things Feel Messy</h2>
 
       <p>One of the easiest ways to make your web pages look less professional is
-      to reduce margins or padding between everything.</p>
+        to reduce margins or padding between everything.</p>
 
       <p>By everything, we mean the space between headings, paragraphs, images,
-      form controls, the vertical space between lines, the horizontal space between
-      the edge of the page, and pretty much every other margin or padding you can
-      think of.</p>
+        form controls, the vertical space between lines, the horizontal space between
+        the edge of the page, and pretty much every other margin or padding you can
+        think of.</p>
     </section>
 
     <section class='section section--red messy'>
       <h2>Inconsistent Spacing</h2>
 
       <p>Using an inconsistent margin between headings, paragraphs, images, and
-      other elements destroys the vertical rhythm of a page. See how this button
-      seems to break the flow of the page?</p>
+        other elements destroys the vertical rhythm of a page. See how this button
+        seems to break the flow of the page?</p>
 
       <a class='button' href='#'>Learn More About Typography</a>
 
       <p>The difference between the top and bottom margin makes it feel like it
-      doesn’t fit in, and your web page is no longer a cohesive whole.</p>
+        doesn’t fit in, and your web page is no longer a cohesive whole.</p>
 
     </section>
 
@@ -829,4 +886,5 @@ nav a:visited:active {
   </div>
 
 </body>
+
 </html>
