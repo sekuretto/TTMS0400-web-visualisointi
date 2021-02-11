@@ -1,0 +1,14 @@
+@media only screen and (max-width: 600px) {
+	//koska footer perii (@extend) kaikki header-tyylit, nämä mediatyylitkin periytyvät footerille automaattisesti
+	header {
+		flex-direction: column;
+		justify-content: center;
+	}
+	main {
+		grid: none;
+	}
+
+	aside {
+		margin-top: 5px;
+	}
+}
