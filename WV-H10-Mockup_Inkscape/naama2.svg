@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="281.84mm" height="230.96mm" version="1.1" viewBox="0 0 281.84 230.96" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <g transform="translate(132.43 -19.079)">
+  <circle cx="-171.22" cy="6.8036" r="0" fill="#ffe6d5" stroke-width=".28616"/>
+  <g>
+   <circle cx="9.8274" cy="134.56" r="115.48" fill="#f60" stroke-width=".26458"/>
+   <g transform="translate(4.5357)">
+    <circle cx="-81.265" cy="137.21" r="45.057" fill="#f60" stroke-width=".26458"/>
+    <ellipse cx="-80.131" cy="136.45" rx="39.02" ry="38.265" fill="#ffe6d5" stroke-width=".25949"/>
+    <circle cx="-80.131" cy="135.69" r="17.661" stroke-width=".29629"/>
+    <circle cx="-74.461" cy="130.4" r="5.5808" fill="#fff" stroke-width=".26458"/>
+   </g>
+   <g transform="translate(176.51 .37798)">
+    <circle cx="-81.265" cy="137.21" r="45.057" fill="#f60" stroke-width=".26458"/>
+    <ellipse cx="-80.131" cy="136.45" rx="39.02" ry="38.265" fill="#ffe6d5" stroke-width=".25949"/>
+    <circle cx="-80.131" cy="135.69" r="17.661" stroke-width=".29629"/>
+    <circle cx="-74.461" cy="130.4" r="5.5808" fill="#fff" stroke-width=".26458"/>
+   </g>
+  </g>
+  <g>
+   <path d="m-47.714 73.64c2.8942 24.799 1.2371 20.733-22.112 21.845-23.226 1.1058-34.626-0.32182-12.758-12.758l11.154-6.3435c9.2528-5.2621 23.716-2.7437 23.716-2.7437z" fill="#a40" stroke-width=".26458"/>
+   <path d="m68.364 74.272c-2.9281 24.799-1.2516 20.733 22.371 21.845 23.497 1.1058 35.031-0.32182 12.907-12.758l-11.285-6.3435c-9.361-5.2621-23.993-2.7437-23.993-2.7437z" fill="#a40" stroke-width=".26613"/>
+   <path d="m75.991 190.3c-2.3425 23.167-35.947 30.648-62.939 30.648-26.992 1e-5 -63.395-7.0165-67.119-30.243-3.6729-22.911 9.0902-1.6006 66.359-2.4684 54.185-0.82111 65.841-19.118 63.7 2.0634z" fill="#803300" stroke-width=".26297"/>
+  </g>
+  <path d="m56.816 194.28s-21.054 13.916-45.288 13.916c-28.769 0-48.311-15.05-48.311-15.05-27.139-24.723-4.2694-6.1332 47.177-6.356 48.803-0.21136 75.075-17.295 46.422 7.49z" fill="#ffe6d5" stroke-width=".26458"/>
+  <path d="m-63.271 188.86c0.48029 9.9888 4.0643 9.2459-15.915 9.7455-78.567 1.9645-55.855 3.4201-22.718-11.985 0 0 11.809-5.2591 22.718-6.7589 18.32-2.5186 15.483 0.0295 15.915 8.9988z" fill="#803300" stroke-width=".26295"/>
+  <path d="m84.51 188.53c-0.45063 9.0273-3.8133 8.3559 14.932 8.8074 73.716 1.7754 52.406 3.0909 21.315-10.832 0 0-11.08-4.7528-21.315-6.1083-17.189-2.2762-14.527 0.0267-14.932 8.1326z" fill="#803300" stroke-width=".24213"/>
+ </g>
+</svg>
